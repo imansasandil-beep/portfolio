@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects & Blog - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation header -->
+    <header>
+        <nav>
+            <h1>Sandil's Portfolio</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blogs.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <section class="blog-section">
+            <h2>Recent Projects & Posts</h2>
+            
+            <!-- First blog post -->
+            <article class="blog-post">
+                <header>
+                    <h3>Designing a Database for a Grocery Service</h3>
+                    <time datetime="2025-10-23">October 23, 2025</time>
+                </header>
+                <p>This was one of my most in-depth projects: designing a complete conceptual database (EERD) for 'Foodz@Yourz,' a complex online grocery delivery service. I started by analyzing a detailed brief that outlined all the business rules.</p>
+                <p>The key challenge was modeling the complex relationships. This included store-specific product pricing, handling the full order lifecycle (from basket to payment, collection, and delivery), and mapping the interactions between members, staff (drivers, workers), and vehicles.
+
+                    The result is a comprehensive EERD that maps all entities and relationships, ensuring a solid and logical foundation for the application's backend.</p>
+                <ul class="post-tags">
+                    <li>Database design</li>
+                    <li>EERD</li>
+                    <li>Data modeling</li>
+                </ul>
+            </article>
+            
+            <!-- Second blog post -->
+            <article class="blog-post">
+                <header>
+                    <h3>Building a Desktop Budgeting App</h3>
+                    <time datetime="2025-09-15">September 15, 2025</time>
+                </header>
+                <p>Building a real-time stock ticker application was a great way to dive deep into concurrent programming. I started by designing a clear architecture to handle high-volume data streams without performance bottlenecks. The core challenge was implementing thread-safe data updates and ensuring the GUI remained responsive during heavy processing.</p>
+                <p>I used Java's Executor Framework and Callable/Future interfaces to manage a pool of worker threads responsible for fetching and processing stock data asynchronously. Swing was used for the graphical user interface, and synchronized blocks and Concurrent Collections were critical for managing shared data access. The final application provides a fast, reliable, and continuously updating display.</p>
+                <ul class="post-tags">
+                    <li>java</li>
+                    <li>javaFx</li>
+                </ul>
+            </article>
+
+            
+            
+
+            <article class="blog-post">
+                <header>
+                    <h3>The 'AquaSave' Website</h3>
+                    <time datetime="2025-04-12">April 12, 2025</time>
+                </header>
+                <p>Working in a team of five on this project was an amazing experience. Our goal was to build a responsive, informational website to raise awareness about water conservation. We designed a site to share helpful tips, display interesting data, and embed a calculator for users to estimate their usage..</p>
+                <p>he main challenge was coordinating our efforts, managing our code with Git, and ensuring a consistent design across all pages. My role was focused on the front-end, building several of the interactive components using JavaScript and ensuring the layout was fully responsive with HTML5 and CSS3 The result is a comprehensive EERD that maps all entities and relationships, ensuring a solid and logical foundation for the application's backend.</p>
+                <ul class="post-tags">
+                    <li>Html</li>
+                    <li>Css</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <!-- Sidebar -->
+    <aside>
+        <h3>Connect With Me</h3>
+        <ul class="social-links">
+            <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/imansa-sandil-76a2b0391/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/imansasandil-beep" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.instagram.com/_imansandil__?igsh=MTcyYmR6cWJxM2tmeA==" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+        <div class="latest-update">
+            <h4>Categories</h4>
+            <ul class="category-list">
+                <li>Database design</li>
+                <li>Application development</li>
+                <li>Web Development</li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Built with ☕ and code by Sandil | © 2025</p>
+    </footer>
+</body>
+</html>
