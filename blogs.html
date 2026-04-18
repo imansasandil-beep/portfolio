@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore Sandil's projects and blog posts on database design, Java development, and web development.">
-    <title>Projects | Sandil</title>
+    <meta name="description" content="Explore Imansa Sandil's projects: FarmSmart, Estate Agent App, Smart Campus API, and more.">
+    <title>Projects | Imansa Sandil</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
@@ -17,6 +17,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="blogs.html" class="active">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -25,49 +26,90 @@
     <!-- Main content -->
     <main>
         <section class="blog-section">
-            <h2>Recent Projects &amp; Posts</h2>
-            
-            <!-- First blog post -->
-            <article class="blog-post">
-                <header>
-                    <h3>Designing a Database for a Grocery Service</h3>
-                    <time datetime="2025-10-23">October 23, 2025</time>
-                </header>
-                <p>This was one of my most in-depth projects: designing a complete conceptual database (EERD) for 'Foodz@Yourz,' a complex online grocery delivery service. I started by analyzing a detailed brief that outlined all the business rules.</p>
-                <p>The key challenge was modeling the complex relationships. This included store-specific product pricing, handling the full order lifecycle (from basket to payment, collection, and delivery), and mapping the interactions between members, staff (drivers, workers), and vehicles.
+            <h2>Projects</h2>
 
-                    The result is a comprehensive EERD that maps all entities and relationships, ensuring a solid and logical foundation for the application's backend.</p>
-                <ul class="post-tags">
-                    <li>Database design</li>
-                    <li>EERD</li>
-                    <li>Data modeling</li>
-                </ul>
-            </article>
-            
-            <!-- Second blog post -->
+            <!-- FarmSmart -->
             <article class="blog-post">
                 <header>
-                    <h3>Building a Desktop Budgeting App</h3>
-                    <time datetime="2025-09-15">September 15, 2025</time>
+                    <h3>FarmSmart — Digital Agriculture Platform</h3>
+                    <time datetime="2026-03-01">Oct 2025 – Mar 2026</time>
                 </header>
-                <p>Building a real-time stock ticker application was a great way to dive deep into concurrent programming. I started by designing a clear architecture to handle high-volume data streams without performance bottlenecks. The core challenge was implementing thread-safe data updates and ensuring the GUI remained responsive during heavy processing.</p>
-                <p>I used Java's Executor Framework and Callable/Future interfaces to manage a pool of worker threads responsible for fetching and processing stock data asynchronously. Swing was used for the graphical user interface, and synchronized blocks and Concurrent Collections were critical for managing shared data access. The final application provides a fast, reliable, and continuously updating display.</p>
+                <p>Acted as <strong>Team Leader</strong>, orchestrating the full-stack development of a React Native (Expo) and Node.js digital agriculture platform built for Sri Lankan farmers.</p>
+                <p>Engineered a highly secure user authentication flow with custom registration, secure login, and Multi-Factor Authentication (MFA). Architected a comprehensive mobile marketplace with MongoDB and Cloudinary, featuring product listings, in-app chat, reviews, and secure checkout integration via Stripe.</p>
+                <p>Managed version control (Git) and the complete application deployment — hosting the server on Render and building the production Android APK via Expo.</p>
                 <ul class="post-tags">
-                    <li>java</li>
-                    <li>javaFx</li>
+                    <li>React Native</li>
+                    <li>Node.js</li>
+                    <li>MongoDB</li>
+                    <li>Express.js</li>
+                    <li>Stripe</li>
+                    <li>Expo</li>
                 </ul>
             </article>
 
+            <!-- Estate Agent -->
+            <article class="blog-post">
+                <header>
+                    <h3>Estate Agent Web Application</h3>
+                    <time datetime="2026-03-01">Nov 2025 – Mar 2026</time>
+                </header>
+                <p>Built a serverless React.js Single Page Application with a multi-criteria search engine powered by local JSON data. Developed interactive drag-and-drop favorites management and React tabs for modular property layouts.</p>
+                <p>Implemented hand-written media queries, Jest test suites, and CSP security headers for professional deployment on GitHub Pages.</p>
+                <ul class="post-tags">
+                    <li>React.js</li>
+                    <li>JSON</li>
+                    <li>Jest</li>
+                    <li>GitHub Pages</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </article>
+
+            <!-- Smart Campus -->
+            <article class="blog-post">
+                <header>
+                    <h3>Smart Campus REST API</h3>
+                    <time datetime="2026-04-01">Jan 2026 – Apr 2026</time>
+                </header>
+                <p>Developed a high-performance, thread-safe RESTful system using Java, Jersey, and Grizzly, following a structured v1 API design for scalable resource management.</p>
+                <p>Engineered core data models for rooms and sensors using ConcurrentHashMap for thread safety, while implementing Sub-Resource Locators to manage complex, nested sensor reading histories. Integrated robust validation logic and custom exception mappers for clean error reporting.</p>
+                <ul class="post-tags">
+                    <li>Java</li>
+                    <li>JAX-RS</li>
+                    <li>Grizzly</li>
+                    <li>Thread-Safety</li>
+                    <li>RESTful API</li>
+                </ul>
+            </article>
+
+            <!-- Shortest Path -->
+            <article class="blog-post">
+                <header>
+                    <h3>Shortest Path Algorithm Engine</h3>
+                    <time datetime="2026-04-01">Jan 2025 – Apr 2026</time>
+                </header>
+                <p>Engineered a Java application using Dijkstra's and BFS algorithms to calculate optimal routes across weighted grid maps with varied terrain obstacles.</p>
+                <p>Optimized search performance via Big-O complexity analysis and benchmarking execution times across large-scale datasets to ensure maximum system efficiency.</p>
+                <ul class="post-tags">
+                    <li>Java</li>
+                    <li>Dijkstra's</li>
+                    <li>BFS</li>
+                    <li>Data Structures</li>
+                </ul>
+            </article>
+
+            <!-- AquaSave -->
             <article class="blog-post">
                 <header>
                     <h3>The 'AquaSave' Website</h3>
                     <time datetime="2025-04-12">April 12, 2025</time>
                 </header>
-                <p>Working in a team of five on this project was an amazing experience. Our goal was to build a responsive, informational website to raise awareness about water conservation. We designed a site to share helpful tips, display interesting data, and embed a calculator for users to estimate their usage..</p>
-                <p>he main challenge was coordinating our efforts, managing our code with Git, and ensuring a consistent design across all pages. My role was focused on the front-end, building several of the interactive components using JavaScript and ensuring the layout was fully responsive with HTML5 and CSS3 The result is a comprehensive EERD that maps all entities and relationships, ensuring a solid and logical foundation for the application's backend.</p>
+                <p>Working in a team of five, we built a responsive, informational website to raise awareness about water conservation. The site shares helpful tips, displays data, and includes a calculator for users to estimate their usage.</p>
+                <p>My role focused on front-end development — building interactive components using JavaScript and ensuring the layout was fully responsive with HTML5 and CSS3.</p>
                 <ul class="post-tags">
-                    <li>Html</li>
-                    <li>Css</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Team Project</li>
                 </ul>
             </article>
         </section>
@@ -77,24 +119,26 @@
     <aside>
         <h3>Connect With Me</h3>
         <ul class="social-links">
-            <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a></li>
             <li><a href="https://www.linkedin.com/in/imansa-sandil-76a2b0391/" target="_blank" rel="noopener">LinkedIn</a></li>
             <li><a href="https://github.com/imansasandil-beep" target="_blank" rel="noopener">GitHub</a></li>
             <li><a href="https://www.instagram.com/_imansandil__?igsh=MTcyYmR6cWJxM2tmeA==" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="mailto:imansasandil@gmail.com">Email Me</a></li>
         </ul>
         <div class="latest-update">
-            <h4>Categories</h4>
+            <h4>Tech Stack</h4>
             <ul class="category-list">
-                <li>Database design</li>
-                <li>Application development</li>
-                <li>Web Development</li>
+                <li>React.js / React Native</li>
+                <li>Java / JAX-RS</li>
+                <li>Node.js / Express</li>
+                <li>MongoDB / MySQL</li>
+                <li>Algorithms</li>
             </ul>
         </div>
     </aside>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; Built with ☕ and code by Sandil | © 2025</p>
+        <p>&copy; 2025 Imansa Sandil Wimalaweera. Built with ☕ and code.</p>
     </footer>
 </body>
 </html>
