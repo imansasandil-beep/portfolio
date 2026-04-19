@@ -129,7 +129,7 @@ nav {
 /* Text effects */
 nav h1 {
     font-family: 'Inter', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
     background: var(--gradient-hero);
     background-size: 200% 200%;
@@ -138,6 +138,19 @@ nav h1 {
     background-clip: text;
     animation: gradientShift 4s ease infinite;
     letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-role {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    font-weight: 400;
+    letter-spacing: 0.03em;
 }
 
 nav ul {
