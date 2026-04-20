@@ -951,6 +951,24 @@ textarea {
 }
 
 /* ===== HERO ENHANCEMENTS ===== */
+.hero-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(108, 99, 255, 0.5);
+    box-shadow: 0 0 40px rgba(108, 99, 255, 0.25), 0 0 80px rgba(0, 212, 170, 0.1);
+    margin-bottom: 24px;
+    transition: var(--transition-smooth);
+    animation: float 4s ease-in-out infinite;
+}
+
+.hero-photo:hover {
+    border-color: var(--accent-2);
+    box-shadow: 0 0 50px rgba(0, 212, 170, 0.35), 0 0 100px rgba(108, 99, 255, 0.15);
+    transform: scale(1.05);
+}
+
 .hero-greeting {
     font-size: 1rem;
     text-transform: uppercase;
