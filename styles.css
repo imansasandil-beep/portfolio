@@ -378,6 +378,8 @@ aside {
     height: fit-content;
     position: sticky;
     top: 100px;
+    align-self: start;
+    z-index: 10;
 }
 
 aside h3 {
